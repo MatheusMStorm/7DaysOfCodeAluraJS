@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - Calculadora</title>
+    <!-- Ícone -->
+    <link rel="icon" href="img/icons8-calculator-32.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="day7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&family=Sixtyfour&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+
+    <input type="text" id="display" readonly>
+
+        <div class="c1">
+            <input type="button" value="1" onClick="imprimirNaTela('1')">
+            <input type="button" value="2" onClick="imprimirNaTela('2')">
+            <input type="button" value="3" onClick="imprimirNaTela('3')">
+            <input type="button" value="+" onClick="imprimirNaTela('+')">
+        </div>
+
+        <div class="c2">
+            <input type="button" value="4" onClick="imprimirNaTela('4')">
+            <input type="button" value="5" onClick="imprimirNaTela('5')">
+            <input type="button" value="6" onClick="imprimirNaTela('6')">
+            <input type="button" value="-" onClick="imprimirNaTela('-')">
+        </div>
+
+        <div class="c3">
+            <input type="button" value="7" onClick="imprimirNaTela('7')">
+            <input type="button" value="8" onClick="imprimirNaTela('8')">
+            <input type="button" value="9" onClick="imprimirNaTela('9')">
+            <input type="button" value="*" onClick="imprimirNaTela('*')">
+        </div>
+
+        <div class="c4">
+            <input type="button" value="C" onClick="limparTela()">
+            <input type="button" value="0" onClick="imprimirNaTela('0')">
+            <input type="button" value="=" onClick="imprimirResultado()">
+            <input type="button" value="/" onClick="imprimirNaTela('/')">
+        </div>
+
+    <script src="day7.js"></script>
+</body>
+</html>
